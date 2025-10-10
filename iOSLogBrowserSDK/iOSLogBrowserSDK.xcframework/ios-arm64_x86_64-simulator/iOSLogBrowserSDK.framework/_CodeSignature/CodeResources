@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/iOSLogBrowserOption.h</key>
 		<data>
-		8sYeh/8b5/eWvuj7BBGxvi694Vw=
+		pgZN78nESUnE9l8K7broiu72oSM=
 		</data>
 		<key>Headers/iOSLogBrowserSDK.h</key>
 		<data>
-		D++5JaGd8RR0lW+LpyphkF5Jn1k=
+		oM3Nelz2Nj15dsmb2tsHb6mCpQI=
 		</data>
 		<key>Headers/iOSLogBrowserSDKDefines.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jCQseH80SGU9BUJCpGHSYVhhwho=
+		E0msUjvvhCiHYVy1k5ORZ9Qstps=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -29,32 +29,20 @@
 	<dict>
 		<key>Headers/iOSLogBrowserOption.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8sYeh/8b5/eWvuj7BBGxvi694Vw=
-			</data>
 			<key>hash2</key>
 			<data>
-			q419sZZyAB0qFey4VQekwEMvZzZnyH3x5Q+4BbZS5y8=
+			LCGRGioC8n6hqdUsaLaKe/GUVSl83XsWmzPgtVUHCrk=
 			</data>
 		</dict>
 		<key>Headers/iOSLogBrowserSDK.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			D++5JaGd8RR0lW+LpyphkF5Jn1k=
-			</data>
 			<key>hash2</key>
 			<data>
-			FJPsR+75ljSBAJWWOFE+b6CcB59moguTBXxcZJYh48A=
+			dKfkhmJP+Ce9uIZa57AYWSiX1ydZ3/oDSnnCiQDktdM=
 			</data>
 		</dict>
 		<key>Headers/iOSLogBrowserSDKDefines.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			x8jkPEGI7Gs0va8423IWiq7uKh8=
-			</data>
 			<key>hash2</key>
 			<data>
 			w/kQCv8rxGwazxddsq7sKt/DWD6l/GvAfOtA9pGamEY=
@@ -62,10 +50,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0a6G/6C7/FUpuqm+kFlxzsH0oTU=
-			</data>
 			<key>hash2</key>
 			<data>
 			6SQnzbe4z1LN0e7wbgOEs17GMMMhctabxbRU+Vk7oFA=

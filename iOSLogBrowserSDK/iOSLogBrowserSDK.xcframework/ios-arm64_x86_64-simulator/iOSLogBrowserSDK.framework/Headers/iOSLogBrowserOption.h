@@ -52,7 +52,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///  no matter what.
 ///
 ///  > Important: The default value is NO.
-@property(nonatomic) BOOL suspendInBackground;
+@property(nonatomic, assign) BOOL suspendInBackground;
 
 /// The format string for console logger output
 ///
@@ -61,6 +61,15 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// > Important: The default value is `XLLoggerFormatString_NSLog`
 @property(nonatomic, copy, nullable) NSString* consoleLoggerFormatString;
+
+
+/// Whether to display the queue name in the browser interface.
+///
+/// When enabled, the queue name (e.g., com.apple.main-thread) will be shown alongside each log entry
+/// in the web browser view. This can be helpful for debugging concurrent operations.
+///
+/// > Important: The default value is `NO`.
+@property(nonatomic, assign) BOOL showQueueNameInBrowser;
 
 /// The default option
 + (instancetype)defaultOption;

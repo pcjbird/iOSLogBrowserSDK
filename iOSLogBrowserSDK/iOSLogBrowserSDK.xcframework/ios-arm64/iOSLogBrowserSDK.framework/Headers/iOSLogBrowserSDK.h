@@ -4,12 +4,12 @@
 //
 //  Created by pcjbird on 11/16/24.
 //
-//  框架名称: iOSLogBrowserSDK.xcframework
-//  框架功能: A real-time iOS log tracing tool that enables viewing iOS logs on a PC web browser within a local area network. The log display automatically scrolls similar to Xcode console.
+//  框架名称：iOSLogBrowserSDK.xcframework
+//  框架功能：A real-time iOS log tracing tool that enables viewing iOS logs on a PC web browser within a local area network. The log display automatically scrolls similar to Xcode console.
 //          一个实时的 iOS 日志追踪工具，可以在本地区域网络内通过 PC 网页浏览器查看 iOS 日志，他将类似 Xcode 控制台一样自动滚动显示日志。
 //
-//  构建版本:
-//      pcjbird    2024-11-18  Version:1.0.3 Build:20241118003
+//  构建版本：
+//      pcjbird    2025-10-10  Version:1.0.5 Build:20251010001
 
 #import <Foundation/Foundation.h>
 #import <iOSLogBrowserSDK/iOSLogBrowserSDKDefines.h>

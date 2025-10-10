@@ -1,5 +1,9 @@
 # RELEASES
 
+## pcjbird 2925-10-10 Version:1.0.5 Build:20251010001
+
+- SDK initial options now support `showQueueNameInBrowser`.
+
 ## pcjbird 2025-03-23 Version:1.0.4 Build:20250323001
 
 - SDK initial options now support `consoleLoggerFormatString`.
