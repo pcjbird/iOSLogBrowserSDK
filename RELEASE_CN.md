@@ -1,5 +1,9 @@
 # 版本更新日志
 
+## pcjbird 2925-11-03 Version:1.0.6 Build:20251103001
+
+- 优化了日志级别的颜色映射。
+
 ## pcjbird 2925-10-10 Version:1.0.5 Build:20251010001
 
 - SDK 初始化选项现在支持 `showQueueNameInBrowser`。

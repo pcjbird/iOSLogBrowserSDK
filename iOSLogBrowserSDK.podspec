@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = "iOSLogBrowserSDK"
-    s.version          = "1.0.5"
+    s.version          = "1.0.6"
     s.summary          = "A real-time iOS log tracing tool that enables viewing iOS logs on a PC web browser within a local area network. The log display automatically scrolls similar to Xcode console."
     s.description      = <<-DESC
     一个实时的iOS日志跟踪工具，让您在局域网内通过浏览器实时查看iOS应用日志。无需Mac电脑和数据线连接，支持多台设备同时监听，日志自动滚动显示，操作便捷，是移动测试人员的理想选择。
