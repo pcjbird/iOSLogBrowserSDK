@@ -9,7 +9,7 @@
 //          一个实时的 iOS 日志追踪工具，可以在本地区域网络内通过 PC 网页浏览器查看 iOS 日志，他将类似 Xcode 控制台一样自动滚动显示日志。
 //
 //  构建版本：
-//      pcjbird    2025-11-03  Version:1.0.6 Build:20251103001
+//      pcjbird    2025-11-24  Version:1.0.7 Build:20251124001
 
 #import <Foundation/Foundation.h>
 #import <iOSLogBrowserSDK/iOSLogBrowserSDKDefines.h>

@@ -1,10 +1,14 @@
 # CHANGELOG
 
-## pcjbird 2925-11-03 Version:1.0.6 Build:20251103001
+## pcjbird 2025-11-24 Version:1.0.7 Build:20251124001
+
+- Fixed an issue where `<` and `>` in log content were parsed as HTML tags by the browser; they are now escaped to `&lt;` and `&gt;`.
+
+## pcjbird 2025-11-03 Version:1.0.6 Build:20251103001
 
 - Refined color mapping for log levels.
 
-## pcjbird 2925-10-10 Version:1.0.5 Build:20251010001
+## pcjbird 2025-10-10 Version:1.0.5 Build:20251010001
 
 - SDK initial options now support `showQueueNameInBrowser`.
 

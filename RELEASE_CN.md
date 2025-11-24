@@ -1,10 +1,14 @@
 # 版本更新日志
 
-## pcjbird 2925-11-03 Version:1.0.6 Build:20251103001
+## pcjbird 2025-11-24 Version:1.0.7 Build:20251124001
+
+- 修复了日志内容中 `<` 和 `>` 被浏览器解析为 HTML 标签的问题，现在它们被转义为 `&lt;` 和 `&gt;`。
+
+## pcjbird 2025-11-03 Version:1.0.6 Build:20251103001
 
 - 优化了日志级别的颜色映射。
 
-## pcjbird 2925-10-10 Version:1.0.5 Build:20251010001
+## pcjbird 2025-10-10 Version:1.0.5 Build:20251010001
 
 - SDK 初始化选项现在支持 `showQueueNameInBrowser`。
 
