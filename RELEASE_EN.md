@@ -1,5 +1,9 @@
 # RELEASES
 
+## pcjbird 2025-11-24 Version:1.0.8 Build:20251124002
+
+- Fixed telnet server logger format issue.
+
 ## pcjbird 2025-11-24 Version:1.0.7 Build:20251124001
 
 - Fixed an issue where `<` and `>` in log content were parsed as HTML tags by the browser; they are now escaped to `&lt;` and `&gt;`.
