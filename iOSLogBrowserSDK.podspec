@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = "iOSLogBrowserSDK"
-    s.version          = "1.0.8"
+    s.version          = "1.0.9"
     s.summary          = "Real-time iOS log viewer via LAN browser, auto-scrolls like Xcode console."
     s.description      = <<-DESC
     A real-time iOS log tracing tool that lets you view iOS app logs live in a browser over the LAN. No Mac or cable required; multiple devices can listen simultaneously, logs auto-scroll, and it’s simple to operate—perfect for mobile QA engineers.

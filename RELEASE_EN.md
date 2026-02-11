@@ -1,5 +1,9 @@
 # RELEASES
 
+## pcjbird 2026-02-12 Version:1.0.9 Build:20260212001
+
+- Fixed app icon.
+
 ## pcjbird 2025-11-24 Version:1.0.8 Build:20251124002
 
 - Fixed telnet server logger format issue.
