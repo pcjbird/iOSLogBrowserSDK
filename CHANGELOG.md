@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## pcjbird 2026-05-08 Version:1.1.0 Build:20260508001
+
+- Optimized dependencies.
+
 ## pcjbird 2026-02-12 Version:1.0.9 Build:20260212001
 
 - Fixed app icon.

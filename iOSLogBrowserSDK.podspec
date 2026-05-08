@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = "iOSLogBrowserSDK"
-    s.version          = "1.0.9"
+    s.version          = "1.1.0"
     s.summary          = "Real-time iOS log viewer via LAN browser, auto-scrolls like Xcode console."
     s.description      = <<-DESC
     A real-time iOS log tracing tool that lets you view iOS app logs live in a browser over the LAN. No Mac or cable required; multiple devices can listen simultaneously, logs auto-scroll, and it’s simple to operate—perfect for mobile QA engineers.
@@ -16,10 +16,12 @@ Pod::Spec.new do |s|
 
     s.platform         = :ios, '10.0'
     s.frameworks       = 'Foundation', 'UIKit'
-    s.vendored_frameworks = 'iOSLogBrowserSDK/iOSLogBrowserSDK.xcframework'
+    s.vendored_frameworks = 'iOSLogBrowserSDK/iOSLogBrowserSDK.xcframework', 'iOSLogBrowserSDK/XLFacility.xcframework'
     s.resource = 'iOSLogBrowserSDK/iOSLogBrowserSDK.bundle'
 
-    s.dependency 'XLFacility'
+    s.ios.library = 'sqlite3'
+    s.ios.frameworks = 'CFNetwork'
+
     s.dependency 'YYWebImage'
 
     s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
