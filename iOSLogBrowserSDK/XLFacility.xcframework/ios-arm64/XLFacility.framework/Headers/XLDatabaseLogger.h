@@ -1,7 +1,7 @@
 /*
  Copyright (c) 2014, Pierre-Olivier Latour
  All rights reserved.
- 
+
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
  * Redistributions of source code must retain the above copyright
@@ -12,7 +12,7 @@
  * The name of Pierre-Olivier Latour may not be used to endorse
  or promote products derived from this software without specific
  prior written permission.
- 
+
  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -44,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  Returns the database path as specified when the logger was initialized.
  */
-@property(nonatomic, readonly) NSString* databasePath;
+@property(nonatomic, readonly) NSString *databasePath;
 
 /**
  *  Returns the app version as specified when the logger was initialized.
@@ -64,13 +64,13 @@ NS_ASSUME_NONNULL_BEGIN
  *  @warning The database file is not created or opened until the logger is
  *  opened.
  */
-- (instancetype)initWithDatabasePath:(NSString*)path appVersion:(int)appVersion;
+- (instancetype)initWithDatabasePath:(NSString *)path appVersion:(int)appVersion;
 
 /**
  *  Deletes records from the database that are older than a specific time.
  *  Pass 0.0 to delete all records.
  *
- *  Returns NO if a database error occured.
+ *  Returns NO if a database error occurred.
  */
 - (BOOL)purgeRecordsBeforeAbsoluteTime:(CFAbsoluteTime)time;
 
@@ -79,12 +79,25 @@ NS_ASSUME_NONNULL_BEGIN
  *  Pass 0.0 for "time" to enumerate all records since the beginning of time
  *  and pass 0 for "limit" to fetch all matching records.
  *
- *  Returns NO if a database error occured.
+ *  Returns NO if a database error occurred.
  */
 - (BOOL)enumerateRecordsAfterAbsoluteTime:(CFAbsoluteTime)time
                                  backward:(BOOL)backward
                                maxRecords:(NSUInteger)limit
-                               usingBlock:(void (^)(int appVersion, XLLogRecord* record, BOOL* stop))block;
+                               usingBlock:(void (^)(int appVersion, XLLogRecord *record, BOOL *stop))block;
+
+/**
+ *  Enumerates records in the database between two specific times.
+ *  Pass 0.0 for "from" and 0.0 for "to" to enumerate all records since the beginning of time
+ *  and pass 0 for "limit" to fetch all matching records.
+ *
+ *  Returns NO if a database error occurred.
+ */
+- (BOOL)enumerateRecordsFromAbsoluteTime:(CFAbsoluteTime)from
+                          toAbsoluteTime:(CFAbsoluteTime)to
+                                backward:(BOOL)backward
+                              maxRecords:(NSUInteger)limit
+                              usingBlock:(void (^)(int appVersion, XLLogRecord *record, BOOL *stop))block;
 
 @end
 
@@ -93,16 +106,16 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  Deletes all records from the database.
  *
- *  Returns NO if a database error occured.
+ *  Returns NO if a database error occurred.
  */
 - (BOOL)purgeAllRecords;
 
 /**
  *  Enumerates all records in the database.
  *
- *  Returns NO if a database error occured.
+ *  Returns NO if a database error occurred.
  */
-- (BOOL)enumerateAllRecordsBackward:(BOOL)backward usingBlock:(void (^)(int appVersion, XLLogRecord* record, BOOL* stop))block;
+- (BOOL)enumerateAllRecordsBackward:(BOOL)backward usingBlock:(void (^)(int appVersion, XLLogRecord *record, BOOL *stop))block;
 
 @end
 

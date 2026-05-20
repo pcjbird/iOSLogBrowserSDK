@@ -1,5 +1,13 @@
 # RELEASES
 
+## pcjbird 2026-05-20 Version:1.1.1 Build:20260520001
+
+- Bump `XLFacility` from `1.5.21` to `1.5.22`.
+
+## pcjbird 2026-05-08 Version:1.1.0 Build:20260508001
+
+- Optimized dependencies.
+
 ## pcjbird 2026-05-08 Version:1.1.0 Build:20260508001
 
 - Optimized dependencies.
