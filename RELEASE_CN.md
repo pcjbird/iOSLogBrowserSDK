@@ -1,5 +1,9 @@
 # 版本更新日志
 
+## pcjbird 2026-05-21 Version:1.1.2 Build:20260521001
+
+- 将 `XLFacility` 从 `1.5.22` 升级到 `1.5.23`。
+
 ## pcjbird 2026-05-20 Version:1.1.1 Build:20260520001
 
 - 将 `XLFacility` 从 `1.5.21` 升级到 `1.5.22`。

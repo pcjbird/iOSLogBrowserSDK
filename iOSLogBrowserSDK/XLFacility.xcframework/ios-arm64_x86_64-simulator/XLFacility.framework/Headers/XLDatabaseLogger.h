@@ -99,6 +99,20 @@ NS_ASSUME_NONNULL_BEGIN
                               maxRecords:(NSUInteger)limit
                               usingBlock:(void (^)(int appVersion, XLLogRecord *record, BOOL *stop))block;
 
+/**
+ *  Enumerates records in the database between two specific times.
+ *  Pass 0.0 for "from" and 0.0 for "to" to enumerate all records since the beginning of time
+ *  and pass 0 for "limit" to fetch all matching records.
+ *
+ *  Returns NO if a database error occurred.
+ */
+- (BOOL)enumerateRecordsFromAbsoluteTime:(CFAbsoluteTime)from
+                          toAbsoluteTime:(CFAbsoluteTime)to
+                             minLogLevel:(XLLogLevel)minLogLevel
+                                backward:(BOOL)backward
+                              maxRecords:(NSUInteger)limit
+                              usingBlock:(void (^)(int appVersion, XLLogRecord *record, BOOL *stop))block;
+
 @end
 
 @interface XLDatabaseLogger (Extensions)
